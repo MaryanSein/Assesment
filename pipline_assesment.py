@@ -35,9 +35,7 @@ conn = snowflake.connector.connect(
     schema=schema
 )
 
-# Write the data from the DataFrame to Snowflake
-# Ensuring that the table 'SPOTIFY_SONGS' exists in Snowflake with the appropriate schema
-#success, nchunks, nrows, _ = write_pandas(conn, df, "spotify_songs")
+
 
 write_pandas(conn, df, "spotify_song_1", auto_create_table=True)
 
