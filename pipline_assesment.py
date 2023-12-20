@@ -11,7 +11,7 @@ df["track_name"].fillna("Unknown_track", inplace=True)
 df["track_artist"].fillna("Unknown_artist", inplace=True)
 df["track_album_name"].fillna("Unknown_album", inplace=True)
 
-# Extract only the first 4 characters of the 'track_album_release_date' string
+# Extracting only the first 4 characters of the 'track_album_release_date' string
 df['track_album_release_date'] = df['track_album_release_date'].astype(str).str[:4]
 
 # Convert 'duration_ms' to minutes and cast to int64
