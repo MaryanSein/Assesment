@@ -21,7 +21,7 @@ df.drop('duration_ms', axis=1, inplace=True)
 
 # Snowflake account credentials and connection details
 user = "MARYAN"
-password = "Hejsan123"  # Replace with your actual password
+password = "Hejsan123"  
 account = "DRXDGZU-CS03614"
 database = "assesment_python"
 schema = "assesment_python"
